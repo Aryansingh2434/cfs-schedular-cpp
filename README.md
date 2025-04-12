@@ -4,30 +4,16 @@ This project is a simulation of the **Completely Fair Scheduler (CFS)**, a proce
 
 ---
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Key Concepts](#key-concepts)
-   - [CFS Parameters](#cfs-parameters)
-   - [Scheduling Logic](#scheduling-logic)
-3. [Simulation Details](#simulation-details)
-   - [CPU-Bound Tasks](#cpu-bound-tasks)
-   - [I/O-Bound Tasks](#io-bound-tasks)
-4. [How It Works](#how-it-works)
-5. [Getting Started](#getting-started)
-6. [Simulation](#simulation)
 
----
 
-## Overview
+
 
 The **Completely Fair Scheduler (CFS)** is designed to provide fair CPU time to all tasks by using a virtual runtime (`vruntime`) metric. Tasks with lower `vruntime` are prioritized, ensuring that higher-priority tasks (those with higher weight) get more CPU time. This simulation implements a simplified version of CFS, focusing on:
 
 - **CPU-bound tasks**: Tasks that primarily use the CPU.
 - **I/O-bound tasks**: Tasks that frequently wait for I/O operations.
 
----
 
-## Key Concepts
 
 ### CFS Parameters
 - **Weight**: A priority value assigned to each task. Higher weight means higher priority.
@@ -129,7 +115,6 @@ We can clearly see that IO tasks are waiting for their iowait time and getting p
 ![image](https://github.com/user-attachments/assets/d5f5367a-0a17-4ac6-9663-1b06e96e9677)
 
 
-   _dissecting linux schedulers & implementing our toy cfs_scheduler simulation:- [Link](https://singhdevhub.bearblog.dev/dissecting-linux-schedulers-implementing-our-toy-cfs_scheduler-simulation/)_
 
 
 
