@@ -82,28 +82,6 @@ The **Completely Fair Scheduler (CFS)** is designed to provide fair CPU time to 
 3. **Termination**:
    - The simulation ends when all tasks have completed their `cpu_burst_time`.
 
----
-
-## Getting Started
-
-### Prerequisites
-- C++ compiler (e.g., `g++`).
-- Basic understanding of process scheduling.
-
-### Steps to Run the Simulation
-1. Clone the repository:
-   ```bash
-   git clone <repo-url>
-   cd cfs-scheduler-cpp
-   python -m venv /myvenv # create virtual env if not created, use python3 if python not working
-   source myvenv/bin/activate
-   cd build # make build dir in root folder if it is not there
-   cmake ..
-   make
-   ./cfs-schedular
-   cd ..
-   python3 plot.py
-   ```
 
 ## Simulation
 
